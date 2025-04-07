@@ -10,6 +10,7 @@ public interface IOsirisCommanderPlugin
     string Author { get; }
     string Version { get; }
     string Help { get; }
+    UserControl? SettingsTabContent { get; }
     
     void InitializeMainMenuItem(Menu mainMenuControl);
 
@@ -20,5 +21,5 @@ public interface IOsirisCommanderPlugin
     void InitializeFileView(Grid fileViewControl);
 
     void InitializeTaskBar(Grid taskBarControl);
-
+    
 }
